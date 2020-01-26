@@ -1,0 +1,163 @@
+
+/**************************************** _____ Main _____ */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    --color-green-lottoland: #69a507;
+    --color-green-light-lottoland: #a4cc25;
+    --background-color-nav-item--active: #ffe066;
+    --color-nav-item--active: #535353;
+    --color-gray-light: #d9deda;
+    --color-main-white: #ffffff;
+    --color-green-dark: #012406;
+    --color-gold-number: #e7b933;
+}
+
+ul {
+    list-style: none;
+}
+
+.lottery-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/****************************************** _____ Header - Top Navigation _____ */
+
+.lottery-nav-top-section, .results-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lottery-nav-top-section .lottery-logo {
+    order: 1;
+    max-height: 40px;
+}
+
+.lottery-nav-top-section .lottery-navigation-top {
+    order: 2;
+}
+
+.lottery-nav-top-section .lottery-navigation-top > ul {
+    display: flex;
+}
+
+.lottery-nav-top-section .lottery-navigation-top > ul.lottery-log-menu li {
+    padding: .7rem 1rem;
+    color: var(--color-green-lottoland);
+    border-left: 1px solid var(--color-green-lottoland);
+}
+
+.lottery-nav-top-section .lottery-navigation-top > ul.lottery-log-menu li:first-child {
+    border-left: none;
+}
+
+.lottery-navigation-main, .lottery-navigation-top {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+/****************************************** _____ Header - Main Navigation _____ */
+
+/* Hide Hamburger */
+.lottery-navigation-main label, #hamburger-menu {
+    display: none;
+}
+
+.lottery-nav-main-section {
+    display: flex;
+    align-content: center;
+    background: linear-gradient(90deg, var(--color-green-light-lottoland), var(--color-green-lottoland));
+    color: var(--color-main-white);
+}
+
+.lottery-navigation-main {
+    width: 100%;
+}
+
+.lottery-nav-main-section .lottery-navigation-main > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lottery-nav-main-section .lottery-navigation-main > ul li,
+.lottery-nav-main-section .lottery-navigation-main > ul li a {
+    padding: 1rem 0;
+}
+
+.lottery-nav-main-section .lottery-navigation-main > ul li.active {
+    background-color: var(--background-color-nav-item--active);
+}
+
+.lottery-nav-main-section .lottery-navigation-main > ul li.active a {
+    color: var(--color-nav-item--active);
+}
+
+.lottery-nav-main-section .lottery-navigation-main > ul li a {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--color-main-white);
+}
+
+.lottery-nav-main-section .lottery-navigation-main > ul li:not(.active) a:hover {
+    background-color: var(--color-green-light-lottoland);
+}
+
+/****************************************** ______ Main content - results section ______ */
+
+/* Euro jackpot result section */
+.results-number-list {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.results-number-list li {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+    color: var(--color-green-dark);
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: .7rem;
+    margin-bottom: .7rem;
+}
+
+.results-number-list li:not(.euro-number) {
+    border: 1px solid var(--color-gray-light);
+}
+
+.results-number-list li.euro-number {
+    border: 1px solid var(--color-gold-number);
+}
+
+.results-header {
+    border-bottom: 1px solid var(--color-gray-light);
+    color: var(--color-green-dark);
+}
+
+.results-wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: unset;
+    margin-top: 2rem;
+}
+
+.results-body-header {
+    margin: 1rem 0;
+}
