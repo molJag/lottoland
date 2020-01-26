@@ -28,6 +28,7 @@ ul {
 .lottery-main {
     display: flex;
     flex-direction: column;
+    font-size: initial;
 }
 
 /****************************************** _____ Header - Top Navigation _____ */
@@ -162,7 +163,7 @@ ul {
     margin: 1rem 0;
 }
 
-* Ranking section */
+/* Ranking section */
 table.results-table {
     width: 100%;
     color: var(--color-green-dark);
@@ -259,4 +260,5 @@ tr td {
     .results-table td:last-child {
         border-bottom: 0;
     }
-}
+  }
+  
