@@ -151,7 +151,9 @@
             mode: 'cors',
             cache: 'default' 
         };
-        return fetch('https://media.lottoland.com/api/drawings/euroJackpot', props);
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        const url = 'https://media.lottoland.com/api/drawings/euroJackpot';
+        return fetch(proxyurl + url, props);
     };
 
     // And then...
