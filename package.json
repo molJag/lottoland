@@ -13,7 +13,7 @@
     "gulp": "^3.9.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-uglify-es": "^2.0.0",
-    "jsdom": "^15.1.1",
+    "jsdom": "^16.5.0",
     "mocha": "^7.0.1",
     "mocha-jsdom": "^2.0.0"
   },
